@@ -8,7 +8,7 @@ uses
   FMX.Objects, FMX.Edit, FMX.Controls.Presentation, FMX.Layouts;
 
 type
-  TForm1 = class(TForm)
+  TFrmLogin = class(TForm)
     lytCentral: TLayout;
     rectSenha: TRectangle;
     lblPassword: TLabel;
@@ -22,10 +22,11 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FrmLogin: TFrmLogin;
 
 implementation
 
 {$R *.fmx}
+{$R *.LgXhdpiTb.fmx ANDROID}
 
 end.

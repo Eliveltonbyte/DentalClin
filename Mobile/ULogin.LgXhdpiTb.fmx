@@ -1,0 +1,23 @@
+inherited FrmLogin_LgXhdpiTb: TFrmLogin_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited lytCentral: TLayout
+    Margins.Bottom = 80.000000000000000000
+    inherited rectSenha: TRectangle
+      inherited edtSenha: TEdit
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Size.Height = 31.000000000000000000
+      end
+    end
+    inherited lblPassword: TLabel
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited rectBtn: TRoundRect
+      inherited spdBtn: TSpeedButton
+        Size.Height = 44.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+end

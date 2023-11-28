@@ -1,0 +1,45 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 575
+  ClientWidth = 518
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rectToolbar: TRectangle
+    Align = Top
+    Fill.Color = xFF86CEE9
+    Size.Width = 518.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblTitulo: TLabel
+      Align = Contents
+      StyledSettings = [Family]
+      Size.Width = 518.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = xFF484848
+      TextSettings.HorzAlign = Center
+      Text = 'PRINCIPAL'
+      TabOrder = 0
+    end
+  end
+  object Rectangle1: TRectangle
+    Align = Bottom
+    Fill.Kind = None
+    Position.Y = 512.000000000000000000
+    Sides = [Top]
+    Size.Width = 518.000000000000000000
+    Size.Height = 63.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFC3C2C2
+    Stroke.Cap = Round
+    Stroke.Join = Round
+  end
+end

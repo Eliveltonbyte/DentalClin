@@ -3,12 +3,14 @@ program DentalClin;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  ULogin in 'ULogin.pas' {Form1};
+  ULogin in 'ULogin.pas' {FrmLogin},
+  UPrincipal in 'UPrincipal.pas' {frmPrincipal};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
   Application.Run;
 end.
