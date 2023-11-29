@@ -1,0 +1,33 @@
+inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited rectToolbar: TRectangle
+    Size.Width = 480.000000000000000000
+    inherited lblTitulo: TLabel
+      Size.Width = 480.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited Image1: TImage
+      MultiResBitmap.Height = 64
+      MultiResBitmap.Width = 64
+    end
+  end
+  inherited Rectangle1: TRectangle
+    Size.Width = 460.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited Edit1: TEdit
+      Size.Width = 440.000000000000000000
+    end
+    inherited Rectangle2: TRectangle
+      Size.Width = 440.000000000000000000
+      inherited SpeedButton1: TSpeedButton
+        Size.Width = 440.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
+    end
+  end
+end

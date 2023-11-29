@@ -6,8 +6,7 @@ uses
   ULogin in 'ULogin.pas' {FrmLogin},
   UPrincipal in 'UPrincipal.pas' {frmPrincipal},
   UCliente in 'UCliente.pas' {FrmCliente},
-  UProcedimentos in 'UProcedimentos.pas' {FrmCadProcedimento},
-  UConfigurações in 'UConfigurações.pas' {Form1};
+  UProcedimentos in 'UProcedimentos.pas' {FrmCadProcedimento};
 
 {$R *.res}
 
@@ -17,6 +16,5 @@ begin
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
   Application.CreateForm(TFrmCliente, FrmCliente);
   Application.CreateForm(TFrmCadProcedimento, FrmCadProcedimento);
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
