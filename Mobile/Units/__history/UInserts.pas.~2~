@@ -1,0 +1,11 @@
+unit UInserts;
+
+interface
+
+uses DmGlobal;
+
+implementation
+
+
+
+end.

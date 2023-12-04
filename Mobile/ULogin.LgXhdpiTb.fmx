@@ -7,6 +7,7 @@ inherited FrmLogin_LgXhdpiTb: TFrmLogin_LgXhdpiTb
     inherited rectSenha: TRectangle
       inherited edtSenha: TEdit
         TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Size.Height = 31.000000000000000000
       end
     end
     inherited lblPassword: TLabel
@@ -14,6 +15,7 @@ inherited FrmLogin_LgXhdpiTb: TFrmLogin_LgXhdpiTb
     end
     inherited rectBtn: TRoundRect
       inherited spdBtn: TSpeedButton
+        Size.Height = 44.000000000000000000
         TextSettings.Font.StyleExt = {00070000000000000004000000}
       end
     end

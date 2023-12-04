@@ -1,0 +1,35 @@
+inherited FrmCadProcedimento_LgXhdpiTb: TFrmCadProcedimento_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited rectToolbar: TRectangle
+    Size.Width = 480.000000000000000000
+    inherited lblTitulo: TLabel
+      Size.Width = 480.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited imgVoltar: TImage
+      MultiResBitmap.Height = 64
+      MultiResBitmap.Width = 64
+    end
+  end
+  inherited lytCentral: TLayout
+    Margins.Top = -120.000000000000000000
+    inherited lblNome: TLabel
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited lblProcedimento: TLabel
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited lblValor: TLabel
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited rectBtn: TRectangle
+      Margins.Top = 80.000000000000000000
+      Position.Y = 262.000000000000000000
+      inherited spdCadastrar: TSpeedButton
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
+    end
+  end
+end

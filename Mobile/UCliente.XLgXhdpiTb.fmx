@@ -8,48 +8,47 @@ inherited FrmCliente_XLgXhdpiTb: TFrmCliente_XLgXhdpiTb
       Size.Width = 800.000000000000000000
       TextSettings.Font.StyleExt = {00060000000000000004000000}
     end
-    inherited Image1: TImage
+    inherited imgVoltar: TImage
       MultiResBitmap.Height = 64
       MultiResBitmap.Width = 64
     end
   end
-  inherited Layout1: TLayout
+  inherited lytGeral: TLayout
     Size.Width = 800.000000000000000000
     Size.Height = 1148.000000000000000000
     inherited ListView1: TListView
       Size.Width = 800.000000000000000000
       Size.Height = 1148.000000000000000000
-      inherited Rectangle1: TRectangle
-        inherited Edit3: TEdit
+      inherited rectCentral: TRectangle
+        inherited edtTel2: TEdit
+          Position.Y = 158.000000000000000000
           Margins.Top = 5.000000000000000000
         end
-        inherited ComboBox1: TComboBox
-          Margins.Left = 2.000000000000000000
-          Position.X = 2.000000000000000000
-          Position.Y = 223.000000000000000000
-          Size.Width = 267.000000000000000000
-        end
-        inherited Label4: TLabel
+        inherited lblCpf: TLabel
           Position.Y = 200.000000000000000000
         end
         inherited rectBtn: TRectangle
           inherited spdCadastrar: TSpeedButton
+            Size.Height = 50.000000000000000000
             TextSettings.Font.StyleExt = {00050000000000000004000000}
           end
         end
-        inherited Label5: TLabel
+        inherited lblEmail: TLabel
           Position.Y = 265.000000000000000000
         end
-        inherited Edit4: TEdit
+        inherited edtEmail: TEdit
           Position.Y = 288.000000000000000000
         end
-        inherited Label6: TLabel
+        inherited lblObs: TLabel
           Position.Y = 330.000000000000000000
         end
-        inherited Memo1: TMemo
+        inherited MMOBS: TMemo
           Position.Y = 353.000000000000000000
           Viewport.Width = 389.000000000000000000
           Viewport.Height = 69.000000000000000000
+        end
+        inherited edtCpf: TEdit
+          Position.Y = 223.000000000000000000
         end
       end
     end

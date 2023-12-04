@@ -24,6 +24,7 @@ type
     lytAba4: TLayout;
     lblAba4: TLabel;
     imgAba4: TImage;
+    procedure imgAba1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,9 +37,19 @@ var
 implementation
 
 {$R *.fmx}
+
+uses UCliente, UProcedimentos;
 {$R *.LgXhdpiTb.fmx ANDROID}
 {$R *.SmXhdpiPh.fmx ANDROID}
 {$R *.XLgXhdpiTb.fmx ANDROID}
 {$R *.LgXhdpiPh.fmx ANDROID}
+
+procedure TfrmPrincipal.imgAba1Click(Sender: TObject);
+begin
+   if NOT Assigned(FrmCliente) then
+        Application.CreateForm(TFrmCliente, FrmCliente);
+
+     FrmCliente.Show;
+end;
 
 end.

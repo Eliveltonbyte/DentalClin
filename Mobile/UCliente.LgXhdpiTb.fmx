@@ -8,46 +8,41 @@ inherited FrmCliente_LgXhdpiTb: TFrmCliente_LgXhdpiTb
       Size.Width = 480.000000000000000000
       TextSettings.Font.StyleExt = {00060000000000000004000000}
     end
-    inherited Image1: TImage
+    inherited imgVoltar: TImage
       MultiResBitmap.Height = 64
       MultiResBitmap.Width = 64
     end
   end
-  inherited Layout1: TLayout
+  inherited lytGeral: TLayout
     Size.Width = 480.000000000000000000
     Size.Height = 722.000000000000000000
     inherited ListView1: TListView
       Size.Width = 480.000000000000000000
       Size.Height = 722.000000000000000000
-      inherited Rectangle1: TRectangle
+      inherited rectCentral: TRectangle
         Size.Width = 380.000000000000000000
         Size.Height = 527.000000000000000000
-        inherited Label1: TLabel
+        inherited lblNome: TLabel
           Size.Width = 380.000000000000000000
         end
-        inherited Edit1: TEdit
+        inherited edtNome: TEdit
           Size.Width = 380.000000000000000000
         end
-        inherited Label2: TLabel
+        inherited lblTel1: TLabel
           Size.Width = 380.000000000000000000
         end
-        inherited Edit2: TEdit
+        inherited edtTel1: TEdit
           Size.Width = 380.000000000000000000
         end
-        inherited Label3: TLabel
+        inherited lblTel2: TLabel
           Size.Width = 380.000000000000000000
         end
-        inherited Edit3: TEdit
+        inherited edtTel2: TEdit
           Position.Y = 158.000000000000000000
           Margins.Top = 5.000000000000000000
           Size.Width = 380.000000000000000000
         end
-        inherited ComboBox1: TComboBox
-          Margins.Right = 200.000000000000000000
-          Position.Y = 223.000000000000000000
-          Size.Width = 180.000000000000000000
-        end
-        inherited Label4: TLabel
+        inherited lblCpf: TLabel
           Position.Y = 200.000000000000000000
           Size.Width = 380.000000000000000000
         end
@@ -55,27 +50,35 @@ inherited FrmCliente_LgXhdpiTb: TFrmCliente_LgXhdpiTb
           Position.Y = 477.000000000000000000
           Size.Width = 340.000000000000000000
           inherited spdCadastrar: TSpeedButton
+            Cursor = crHandPoint
             Size.Width = 340.000000000000000000
             TextSettings.Font.StyleExt = {00060000000000000004000000}
           end
         end
-        inherited Label5: TLabel
+        inherited lblEmail: TLabel
           Position.Y = 265.000000000000000000
           Size.Width = 380.000000000000000000
         end
-        inherited Edit4: TEdit
+        inherited edtEmail: TEdit
           Position.Y = 288.000000000000000000
           Size.Width = 380.000000000000000000
         end
-        inherited Label6: TLabel
+        inherited lblObs: TLabel
           Position.Y = 330.000000000000000000
           Size.Width = 380.000000000000000000
         end
-        inherited Memo1: TMemo
-          Position.Y = 353.000000000000000000
+        inherited MMOBS: TMemo
+          ImeMode = imAlpha
+          Cursor = crHandPoint
+          Margins.Top = 5.000000000000000000
+          Position.Y = 358.000000000000000000
           Size.Width = 380.000000000000000000
           Viewport.Width = 380.000000000000000000
           Viewport.Height = 69.000000000000000000
+        end
+        inherited edtCpf: TEdit
+          Position.Y = 223.000000000000000000
+          Size.Width = 380.000000000000000000
         end
       end
     end

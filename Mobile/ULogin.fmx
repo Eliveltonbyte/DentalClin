@@ -99,6 +99,7 @@ object FrmLogin: TFrmLogin
         TextSettings.FontColor = claWhite
         TextSettings.FontColorForState.Pressed = claSteelblue
         TextSettings.Trimming = Word
+        OnClick = spdBtnClick
       end
     end
   end

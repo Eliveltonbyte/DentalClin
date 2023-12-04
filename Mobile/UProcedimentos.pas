@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Edit, FMX.Layouts, FMX.Objects, FMX.Controls.Presentation;
+  FMX.Edit, FMX.Layouts, FMX.Objects, FMX.Controls.Presentation, FMX.ListBox;
 
 type
   TFrmCadProcedimento = class(TForm)
@@ -15,12 +15,12 @@ type
     lytCentral: TLayout;
     lblNome: TLabel;
     edtNome: TEdit;
-    edtProcedimento: TEdit;
     lblProcedimento: TLabel;
     lblValor: TLabel;
     edtValor: TEdit;
     rectBtn: TRectangle;
     spdCadastrar: TSpeedButton;
+    ComboBox1: TComboBox;
   private
     { Private declarations }
   public

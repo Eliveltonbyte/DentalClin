@@ -1,0 +1,60 @@
+inherited FrmCadProcedimento_LgXhdpiTb: TFrmCadProcedimento_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited rectToolbar: TRectangle
+    Size.Width = 480.000000000000000000
+    inherited lblTitulo: TLabel
+      Size.Width = 480.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited imgVoltar: TImage
+      MultiResBitmap.Height = 64
+      MultiResBitmap.Width = 64
+    end
+  end
+  inherited lytCentral: TLayout
+    Margins.Top = -120.000000000000000000
+    inherited lblNome: TLabel
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Size.Width = 351.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited edtNome: TEdit
+      Position.X = 10.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Size.Width = 331.000000000000000000
+    end
+    inherited lblProcedimento: TLabel
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Size.Width = 351.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited lblValor: TLabel
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Size.Width = 351.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+    end
+    inherited edtValor: TEdit
+      Position.X = 10.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Size.Width = 151.000000000000000000
+    end
+    inherited rectBtn: TRectangle
+      Margins.Top = 80.000000000000000000
+      Position.Y = 262.000000000000000000
+      inherited spdCadastrar: TSpeedButton
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
+    end
+    inherited ComboBox1: TComboBox
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Size.Width = 121.000000000000000000
+    end
+  end
+end

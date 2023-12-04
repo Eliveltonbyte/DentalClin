@@ -26,7 +26,7 @@ object FrmCadProcedimento: TFrmCadProcedimento
       TextSettings.Font.StyleExt = {00060000000000000004000000}
       TextSettings.FontColor = xFF484848
       TextSettings.HorzAlign = Center
-      Text = 'Cad. Procedimento'
+      Text = 'PROCEDIMENTOS'
       TabOrder = 0
     end
     object imgVoltar: TImage
@@ -72,35 +72,26 @@ object FrmCadProcedimento: TFrmCadProcedimento
     TabOrder = 1
     object lblNome: TLabel
       Align = Top
-      StyledSettings = [Family, FontColor]
+      StyledSettings = [FontColor]
       Margins.Left = 5.000000000000000000
+      Margins.Top = 10.000000000000000000
       Position.X = 5.000000000000000000
+      Position.Y = 10.000000000000000000
       Size.Width = 356.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Encode Sans'
       TextSettings.Font.Size = 16.000000000000000000
-      TextSettings.Font.StyleExt = {00060000000000000004000000}
-      Text = 'Nome'
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      Text = 'DESCRI'#199#195'O'
       TabOrder = 3
     end
     object edtNome: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
-      TabOrder = 5
-      Position.X = 5.000000000000000000
-      Position.Y = 17.000000000000000000
-      Margins.Left = 5.000000000000000000
-      Margins.Right = 5.000000000000000000
-      Size.Width = 351.000000000000000000
-      Size.Height = 32.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object edtProcedimento: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Top
       TabOrder = 4
       Position.X = 5.000000000000000000
-      Position.Y = 76.000000000000000000
+      Position.Y = 27.000000000000000000
       Margins.Left = 5.000000000000000000
       Margins.Right = 5.000000000000000000
       Size.Width = 351.000000000000000000
@@ -109,32 +100,34 @@ object FrmCadProcedimento: TFrmCadProcedimento
     end
     object lblProcedimento: TLabel
       Align = Top
-      StyledSettings = [Family, FontColor]
+      StyledSettings = [FontColor]
       Margins.Left = 5.000000000000000000
       Margins.Top = 10.000000000000000000
       Position.X = 5.000000000000000000
-      Position.Y = 59.000000000000000000
+      Position.Y = 128.000000000000000000
       Size.Width = 356.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Encode Sans'
       TextSettings.Font.Size = 16.000000000000000000
-      TextSettings.Font.StyleExt = {00060000000000000004000000}
-      Text = 'Tipo Procedimento'
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      Text = 'STATUS'
       TabOrder = 1
     end
     object lblValor: TLabel
       Align = Top
-      StyledSettings = [Family, FontColor]
+      StyledSettings = [FontColor]
       Margins.Left = 5.000000000000000000
       Margins.Top = 10.000000000000000000
       Position.X = 5.000000000000000000
-      Position.Y = 118.000000000000000000
+      Position.Y = 69.000000000000000000
       Size.Width = 356.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Encode Sans'
       TextSettings.Font.Size = 16.000000000000000000
-      TextSettings.Font.StyleExt = {00060000000000000004000000}
-      Text = 'Valor'
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      Text = 'VALOR'
       TabOrder = 0
     end
     object edtValor: TEdit
@@ -143,7 +136,7 @@ object FrmCadProcedimento: TFrmCadProcedimento
       TabOrder = 2
       KeyboardType = NumberPad
       Position.X = 5.000000000000000000
-      Position.Y = 135.000000000000000000
+      Position.Y = 86.000000000000000000
       Margins.Left = 5.000000000000000000
       Margins.Right = 200.000000000000000000
       Size.Width = 156.000000000000000000
@@ -157,7 +150,7 @@ object FrmCadProcedimento: TFrmCadProcedimento
       Margins.Top = 30.000000000000000000
       Margins.Right = 50.000000000000000000
       Position.X = 50.000000000000000000
-      Position.Y = 197.000000000000000000
+      Position.Y = 212.000000000000000000
       Size.Width = 261.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
@@ -172,10 +165,24 @@ object FrmCadProcedimento: TFrmCadProcedimento
         Size.PlatformDefault = False
         Text = 'Cadastrar'
         TextSettings.Font.Family = 'Encode Sans'
-        TextSettings.Font.Size = 20.000000000000000000
-        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
         TextSettings.FontColor = xFF332B2B
       end
+    end
+    object ComboBox1: TComboBox
+      Align = Top
+      Items.Strings = (
+        'ATIVO'
+        'DESATIVADO')
+      ItemIndex = 0
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 230.000000000000000000
+      Position.Y = 150.000000000000000000
+      Size.Width = 131.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
     end
   end
 end

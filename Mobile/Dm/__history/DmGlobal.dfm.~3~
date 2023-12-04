@@ -1,0 +1,12 @@
+object DM: TDM
+  Height = 269
+  Width = 461
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=C:\DentalClin\Mobile\dataBase\dados'
+      'DriverID=SQLite')
+    Connected = True
+    Left = 104
+    Top = 64
+  end
+end

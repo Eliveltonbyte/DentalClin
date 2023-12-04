@@ -8,7 +8,7 @@ object FrmCliente: TFrmCliente
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  DesignerMasterStyle = 3
+  DesignerMasterStyle = 0
   object rectToolbar: TRectangle
     Align = Top
     Fill.Color = xFF86CEE9
@@ -26,10 +26,10 @@ object FrmCliente: TFrmCliente
       TextSettings.Font.StyleExt = {00060000000000000004000000}
       TextSettings.FontColor = xFF484848
       TextSettings.HorzAlign = Center
-      Text = 'Cad. Cliente'
+      Text = 'CLIENTE'
       TabOrder = 0
     end
-    object Image1: TImage
+    object imgVoltar: TImage
       MultiResBitmap.Height = 64
       MultiResBitmap.Width = 64
       MultiResBitmap = <
@@ -64,7 +64,7 @@ object FrmCliente: TFrmCliente
       Size.PlatformDefault = False
     end
   end
-  object Layout1: TLayout
+  object lytGeral: TLayout
     Align = Client
     Margins.Bottom = 50.000000000000000000
     Size.Width = 532.000000000000000000
@@ -81,14 +81,14 @@ object FrmCliente: TFrmCliente
       Size.Height = 563.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
-      object Rectangle1: TRectangle
+      object rectCentral: TRectangle
         Align = Center
         Fill.Kind = None
         Size.Width = 389.000000000000000000
         Size.Height = 481.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
-        object Label1: TLabel
+        object lblNome: TLabel
           Align = Top
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
@@ -96,7 +96,7 @@ object FrmCliente: TFrmCliente
           Text = 'Nome'
           TabOrder = 0
         end
-        object Edit1: TEdit
+        object edtNome: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
           TabOrder = 1
@@ -105,7 +105,7 @@ object FrmCliente: TFrmCliente
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
         end
-        object Label2: TLabel
+        object lblTel1: TLabel
           Align = Top
           Margins.Top = 10.000000000000000000
           Position.Y = 65.000000000000000000
@@ -115,7 +115,7 @@ object FrmCliente: TFrmCliente
           Text = 'Telefone 1'
           TabOrder = 2
         end
-        object Edit2: TEdit
+        object edtTel1: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
           TabOrder = 3
@@ -125,7 +125,7 @@ object FrmCliente: TFrmCliente
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
         end
-        object Label3: TLabel
+        object lblTel2: TLabel
           Align = Top
           Margins.Top = 10.000000000000000000
           Position.Y = 130.000000000000000000
@@ -135,37 +135,24 @@ object FrmCliente: TFrmCliente
           Text = 'Telefone 2'
           TabOrder = 4
         end
-        object Edit3: TEdit
+        object edtTel2: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
-          TabOrder = 5
+          TabOrder = 6
           KeyboardType = NumberPad
           Position.Y = 153.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
         end
-        object ComboBox1: TComboBox
-          Align = Top
-          Items.Strings = (
-            'Ativo'
-            'Desativado')
-          ItemIndex = 0
-          Margins.Right = 120.000000000000000000
-          Position.Y = 218.000000000000000000
-          Size.Width = 269.000000000000000000
-          Size.Height = 32.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 6
-        end
-        object Label4: TLabel
+        object lblCpf: TLabel
           Align = Top
           Margins.Top = 10.000000000000000000
           Position.Y = 195.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
-          Text = 'Status'
+          Text = 'CPF'
           TabOrder = 7
         end
         object rectBtn: TRectangle
@@ -185,35 +172,37 @@ object FrmCliente: TFrmCliente
             Align = Client
             StyledSettings = []
             Size.Width = 349.000000000000000000
-            Size.Height = 48.000000000000000000
+            Size.Height = 50.000000000000000000
             Size.PlatformDefault = False
             Text = 'Cadastrar'
             TextSettings.Font.Family = 'Encode Sans'
-            TextSettings.Font.Size = 20.000000000000000000
-            TextSettings.Font.StyleExt = {00050000000000000004000000}
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000003000000}
             TextSettings.FontColor = xFF292323
+            OnClick = spdCadastrarClick
           end
         end
-        object Label5: TLabel
+        object lblEmail: TLabel
           Align = Top
           Margins.Top = 10.000000000000000000
           Position.Y = 260.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
-          Text = 'Endere'#231'o'
+          Text = 'E-mail'
           TabOrder = 9
         end
-        object Edit4: TEdit
+        object edtEmail: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
           TabOrder = 10
+          KeyboardType = EmailAddress
           Position.Y = 283.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
         end
-        object Label6: TLabel
+        object lblObs: TLabel
           Align = Top
           Margins.Top = 10.000000000000000000
           Position.Y = 325.000000000000000000
@@ -223,7 +212,7 @@ object FrmCliente: TFrmCliente
           Text = 'Obs'
           TabOrder = 11
         end
-        object Memo1: TMemo
+        object MMOBS: TMemo
           Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
           DataDetectorTypes = []
           Align = Top
@@ -233,8 +222,18 @@ object FrmCliente: TFrmCliente
           Size.PlatformDefault = False
           StyleLookup = 'memostyle'
           TabOrder = 12
-          Viewport.Width = 381.000000000000000000
-          Viewport.Height = 61.000000000000000000
+          Viewport.Width = 385.000000000000000000
+          Viewport.Height = 65.000000000000000000
+        end
+        object edtCpf: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 5
+          KeyboardType = NumberPad
+          Position.Y = 218.000000000000000000
+          Size.Width = 389.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
         end
       end
     end
