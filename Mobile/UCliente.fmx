@@ -94,16 +94,21 @@ object FrmCliente: TFrmCliente
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           Text = 'Nome'
-          TabOrder = 0
+          TabOrder = 6
         end
         object edtNome: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
-          TabOrder = 1
+          TabOrder = 0
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000003000000}
           Position.Y = 23.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
+          StyledSettings = [FontColor]
+          CharCase = ecUpperCase
         end
         object lblTel1: TLabel
           Align = Top
@@ -113,17 +118,23 @@ object FrmCliente: TFrmCliente
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           Text = 'Telefone 1'
-          TabOrder = 2
+          TabOrder = 7
         end
         object edtTel1: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
-          TabOrder = 3
+          TabOrder = 1
           KeyboardType = NumberPad
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000003000000}
           Position.Y = 88.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
+          StyledSettings = [FontColor]
+          OnEnter = edtTel1Enter
+          OnExit = edtTel1Exit
         end
         object lblTel2: TLabel
           Align = Top
@@ -133,17 +144,23 @@ object FrmCliente: TFrmCliente
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           Text = 'Telefone 2'
-          TabOrder = 4
+          TabOrder = 8
         end
         object edtTel2: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
-          TabOrder = 6
+          TabOrder = 2
           KeyboardType = NumberPad
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000003000000}
           Position.Y = 153.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
+          StyledSettings = [FontColor]
+          OnEnter = edtTel2Enter
+          OnExit = edtTel2Exit
         end
         object lblCpf: TLabel
           Align = Top
@@ -153,7 +170,7 @@ object FrmCliente: TFrmCliente
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           Text = 'CPF'
-          TabOrder = 7
+          TabOrder = 9
         end
         object rectBtn: TRectangle
           Align = Bottom
@@ -190,17 +207,21 @@ object FrmCliente: TFrmCliente
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           Text = 'E-mail'
-          TabOrder = 9
+          TabOrder = 11
         end
         object edtEmail: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
-          TabOrder = 10
+          TabOrder = 4
           KeyboardType = EmailAddress
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000003000000}
           Position.Y = 283.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
+          StyledSettings = [FontColor]
         end
         object lblObs: TLabel
           Align = Top
@@ -210,30 +231,40 @@ object FrmCliente: TFrmCliente
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           Text = 'Obs'
-          TabOrder = 11
+          TabOrder = 12
         end
         object MMOBS: TMemo
           Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
           DataDetectorTypes = []
+          StyledSettings = [FontColor]
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000003000000}
           Align = Top
           Position.Y = 348.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 69.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'memostyle'
-          TabOrder = 12
+          TabOrder = 5
           Viewport.Width = 385.000000000000000000
           Viewport.Height = 65.000000000000000000
         end
         object edtCpf: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
-          TabOrder = 5
+          TabOrder = 3
           KeyboardType = NumberPad
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000003000000}
           Position.Y = 218.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
+          StyledSettings = [FontColor]
+          OnEnter = edtCpfEnter
+          OnExit = edtCpfExit
         end
       end
     end

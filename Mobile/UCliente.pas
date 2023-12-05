@@ -7,7 +7,8 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.ListView.Types,
   FMX.ListView.Appearances, FMX.ListView.Adapters.Base, FMX.Memo.Types,
-  FMX.ScrollBox, FMX.Memo, FMX.ListBox, FMX.Edit, FMX.ListView, FMX.Layouts;
+  FMX.ScrollBox, FMX.Memo, FMX.ListBox, FMX.Edit, FMX.ListView, FMX.Layouts,
+  uFormat;
 
 type
   TFrmCliente = class(TForm)
@@ -32,9 +33,15 @@ type
     MMOBS: TMemo;
     edtCpf: TEdit;
     procedure spdCadastrarClick(Sender: TObject);
+    procedure edtCpfEnter(Sender: TObject);
+    procedure edtCpfExit(Sender: TObject);
+    procedure edtTel1Enter(Sender: TObject);
+    procedure edtTel1Exit(Sender: TObject);
+    procedure edtTel2Exit(Sender: TObject);
+    procedure edtTel2Enter(Sender: TObject);
   private
     function Validar: Boolean;
-    procedure LimparCampo;
+    procedure LimparCampos;
     { Private declarations }
   public
     { Public declarations }
@@ -52,7 +59,37 @@ uses DmGlobal, UInserts;
 {$R *.LgXhdpiTb.fmx ANDROID}
 
 
-procedure TFrmCliente.LimparCampo;
+procedure TFrmCliente.edtCpfEnter(Sender: TObject);
+begin
+    ResetFormat(edtCpf);
+end;
+
+procedure TFrmCliente.edtCpfExit(Sender: TObject);
+begin
+     Formatar(edtCpf, TFormato.CPF);
+end;
+
+procedure TFrmCliente.edtTel1Enter(Sender: TObject);
+begin
+    ResetFormat(EdtTel1);
+end;
+
+procedure TFrmCliente.edtTel1Exit(Sender: TObject);
+begin
+    Formatar(edtTel1, TFormato.Celular);
+end;
+
+procedure TFrmCliente.edtTel2Enter(Sender: TObject);
+begin
+    ResetFormat(EdtTel2);
+end;
+
+procedure TFrmCliente.edtTel2Exit(Sender: TObject);
+begin
+      Formatar(edtTel2, TFormato.Celular);
+end;
+
+procedure TFrmCliente.LimparCampos;
 begin
 
   edtNome.Text :=  '';
@@ -74,38 +111,47 @@ begin
    result:= true;
    Campo:= '';
 
+  if(edtNome.Text = '') or (edtTel1.Text = '') or (edtCpf.Text ='') then begin
    if(EdtNome.Text = '')  then begin
-      result := false;
-   if (EdtCpf.Text = '') or (EdtTel1.Text = '') then begin
-     Campo:= campo + 'Nome' + ', ';
+     result := false;
+     Campo:= campo + 'Nome';
      edtNome.SetFocus;
-   end
-   else
-      Campo:= campo + 'Nome';
+
    end;
 
-     if(EdtCpf.Text = '') then begin
+   if(EdtCpf.Text = '') then begin
       result := false;
-      Campo:= campo + 'Cpf';
-      edtCpf.SetFocus;
-     if EdtTel1.Text = '' then begin
-     Campo:= campo + ', ';
-     end;
+    if Campo = '' then begin
+       Campo:= campo + 'CPF';
+       edtCpf.SetFocus;
+    end
+    else
+      Campo:= campo + ', ' + 'CPF';
    end;
 
-     if(EdtTel1.Text = '') then begin
-      result := false;
-      Campo:= campo + 'Telefone';
-      edtTel1.SetFocus;
+   if(EdtTel1.Text = '') then begin
+       result := false;
+    if campo = '' then begin
+       Campo:= campo + 'Telefone';
+       edtTel1.SetFocus;
+    end
+    else
+       Campo:= campo + ', ' + 'Telefone';
    end;
+      showMessage('Campos obrigatórios não preenchidos: ' + campo);
+  end
+  else
+  exit;
 
-   ShowMessage('Os campos abaixo precisam ser preenchidos: ' + campo);
+
 end;
 
 procedure TFrmCliente.spdCadastrarClick(Sender: TObject);
 begin
-    if Validar = false then
+    if Validar = false then begin
     exit;
+    end;
+
     UInserts.InserirCliente(edtNome.Text,
                             EdtCpf.Text,
                             EdtTel1.Text,
@@ -115,7 +161,8 @@ begin
 
     ShowMessage('Cadastrado com sucesso');
     //limpar Edits
-    LimparCampo;
+    LimparCampos;
+
 
 end;
 

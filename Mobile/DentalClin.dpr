@@ -9,7 +9,8 @@ uses
   UProcedimentos in 'UProcedimentos.pas' {FrmCadProcedimento},
   UConfigurações in 'UConfigurações.pas' {Form1},
   DmGlobal in 'Dm\DmGlobal.pas' {DM: TDataModule},
-  UInserts in 'Units\UInserts.pas';
+  UInserts in 'Units\UInserts.pas',
+  uFormat in 'Units\uFormat.pas';
 
 {$R *.res}
 
