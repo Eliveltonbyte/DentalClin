@@ -42,19 +42,15 @@ inherited FrmCadProcedimento_LgXhdpiTb: TFrmCadProcedimento_LgXhdpiTb
     inherited edtValor: TEdit
       Position.X = 10.000000000000000000
       Margins.Left = 10.000000000000000000
-      Size.Width = 151.000000000000000000
+      Size.Width = 71.000000000000000000
     end
     inherited rectBtn: TRectangle
       Margins.Top = 80.000000000000000000
       Position.Y = 262.000000000000000000
       inherited spdCadastrar: TSpeedButton
+        Size.Height = 50.000000000000000000
         TextSettings.Font.StyleExt = {00050000000000000004000000}
       end
-    end
-    inherited ComboBox1: TComboBox
-      Margins.Left = 10.000000000000000000
-      Position.X = 10.000000000000000000
-      Size.Width = 121.000000000000000000
     end
   end
 end

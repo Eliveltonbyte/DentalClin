@@ -25,6 +25,7 @@ type
     lblAba4: TLabel;
     imgAba4: TImage;
     procedure imgAba1Click(Sender: TObject);
+    procedure imgAba2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,6 +51,14 @@ begin
         Application.CreateForm(TFrmCliente, FrmCliente);
 
      FrmCliente.Show;
+end;
+
+procedure TfrmPrincipal.imgAba2Click(Sender: TObject);
+begin
+  if NOT Assigned(FrmCadProcedimento) then
+        Application.CreateForm(TFrmCadProcedimento, FrmCadProcedimento);
+
+     FrmCadProcedimento.Show;
 end;
 
 end.

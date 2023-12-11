@@ -6,6 +6,7 @@ uses DmGlobal;
 
 procedure InserirCliente (NOME, Tel1, Tel2, CPF, EMAIL, OBS : string);
 
+procedure InserirProcedimento (Desc, Status: string; valor: REAL);
 
 implementation
 procedure InserirCliente (NOME, Tel1, Tel2, CPF, EMAIL, OBS : string);
@@ -23,6 +24,19 @@ begin
     Dm.Query1.ExecSQL;
 
 
+end;
+
+procedure InserirProcedimento (Desc, Status: string; valor: REAL);
+begin
+    Dm.Query1.Close;
+    dm.Query1.SQL.Clear;
+    dm.Query1.SQL.Add('Insert into PROCEDIMENTO (descricao, valor, ativo) values (?, ?, ?)');
+    dm.Query1.Params[0].AsString := DESC;
+    dm.Query1.Params[1].AsString := STATUS;
+    dm.Query1.Params[2].AsfLOAT := VALOR;
+
+
+    Dm.Query1.ExecSQL;
 end;
 
 

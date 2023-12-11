@@ -90,9 +90,13 @@ object FrmCliente: TFrmCliente
         Stroke.Kind = None
         object lblNome: TLabel
           Align = Top
+          StyledSettings = [FontColor]
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
           Text = 'Nome'
           TabOrder = 6
         end
@@ -112,11 +116,15 @@ object FrmCliente: TFrmCliente
         end
         object lblTel1: TLabel
           Align = Top
+          StyledSettings = [FontColor]
           Margins.Top = 10.000000000000000000
           Position.Y = 65.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
           Text = 'Telefone 1'
           TabOrder = 7
         end
@@ -138,11 +146,15 @@ object FrmCliente: TFrmCliente
         end
         object lblTel2: TLabel
           Align = Top
+          StyledSettings = [FontColor]
           Margins.Top = 10.000000000000000000
           Position.Y = 130.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
           Text = 'Telefone 2'
           TabOrder = 8
         end
@@ -164,11 +176,15 @@ object FrmCliente: TFrmCliente
         end
         object lblCpf: TLabel
           Align = Top
+          StyledSettings = [FontColor]
           Margins.Top = 10.000000000000000000
           Position.Y = 195.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
           Text = 'CPF'
           TabOrder = 9
         end
@@ -201,11 +217,15 @@ object FrmCliente: TFrmCliente
         end
         object lblEmail: TLabel
           Align = Top
+          StyledSettings = [FontColor]
           Margins.Top = 10.000000000000000000
           Position.Y = 260.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
           Text = 'E-mail'
           TabOrder = 11
         end
@@ -225,11 +245,15 @@ object FrmCliente: TFrmCliente
         end
         object lblObs: TLabel
           Align = Top
+          StyledSettings = [FontColor]
           Margins.Top = 10.000000000000000000
           Position.Y = 325.000000000000000000
           Size.Width = 389.000000000000000000
           Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Encode Sans'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
           Text = 'Obs'
           TabOrder = 12
         end
@@ -247,8 +271,8 @@ object FrmCliente: TFrmCliente
           Size.PlatformDefault = False
           StyleLookup = 'memostyle'
           TabOrder = 5
-          Viewport.Width = 385.000000000000000000
-          Viewport.Height = 65.000000000000000000
+          Viewport.Width = 389.000000000000000000
+          Viewport.Height = 69.000000000000000000
         end
         object edtCpf: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]

@@ -5,7 +5,8 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Edit, FMX.Layouts, FMX.Objects, FMX.Controls.Presentation, FMX.ListBox;
+  FMX.Edit, FMX.Layouts, FMX.Objects, FMX.Controls.Presentation, FMX.ListBox, uFormat,
+  UInserts;
 
 type
   TFrmCadProcedimento = class(TForm)
@@ -20,7 +21,10 @@ type
     edtValor: TEdit;
     rectBtn: TRectangle;
     spdCadastrar: TSpeedButton;
-    ComboBox1: TComboBox;
+    cbStatus: TComboBox;
+    procedure edtValorEnter(Sender: TObject);
+    procedure edtValorExit(Sender: TObject);
+    procedure spdCadastrarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,4 +39,27 @@ implementation
 {$R *.fmx}
 {$R *.LgXhdpiTb.fmx ANDROID}
 
-end.
+procedure TFrmCadProcedimento.edtValorEnter(Sender: TObject);
+begin
+    ResetFormat(Edtvalor);
+end;
+
+procedure TFrmCadProcedimento.edtValorExit(Sender: TObject);
+begin
+    Formatar(edtValor, TFormato.VALOR);
+end;
+
+procedure TFrmCadProcedimento.spdCadastrarClick(Sender: TObject);
+var
+text: string;
+begin
+   text :=  cbStatus.Selected.Text;
+
+   UInserts.InserirProcedimento(edtNome.Text,
+                                text,
+                                STRTOFloat(Edtvalor.Text));
+
+   ShowMessage('Cadastrado com sucesso');
+end;
+
+end.                           3
