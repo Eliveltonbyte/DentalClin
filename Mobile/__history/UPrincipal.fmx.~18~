@@ -864,7 +864,7 @@ object frmPrincipal: TfrmPrincipal
     ShowSelection = False
     object Circle1: TCircle
       Anchors = [akRight, akBottom]
-      Fill.Color = xFF259EB6
+      Fill.Color = xFF6BC2D4
       Position.X = 321.000000000000000000
       Position.Y = 348.000000000000000000
       Size.Width = 52.000000000000000000

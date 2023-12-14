@@ -26,7 +26,7 @@ type
     lytAba4: TLayout;
     lblAba4: TLabel;
     imgAba4: TImage;
-    lvProcedimentos: TListView;
+    lvAtletas: TListView;
     Circle1: TCircle;
     imgIconeFlutuante: TImage;
     procedure imgAba1Click(Sender: TObject);
