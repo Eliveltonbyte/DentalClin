@@ -1,0 +1,45 @@
+unit UOrcamentos;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.TabControl, Skia,
+  Skia.FMX;
+
+type
+  TfrmOrcamentos = class(TForm)
+    rectToolbar: TRectangle;
+    lblTitulo: TLabel;
+    tbControl: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    imgVoltar: TImage;
+    RectTop: TRectangle;
+    Image1: TImage;
+    rectBtn: TRectangle;
+    rectTotal: TRectangle;
+    lblValorFInal: TLabel;
+    lblTotal: TLabel;
+    spdReceber: TSpeedButton;
+    procedure imgVoltarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmOrcamentos: TfrmOrcamentos;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmOrcamentos.imgVoltarClick(Sender: TObject);
+begin
+  Close;
+end;
+
+end.

@@ -39,6 +39,7 @@ type
     procedure edtTel1Exit(Sender: TObject);
     procedure edtTel2Exit(Sender: TObject);
     procedure edtTel2Enter(Sender: TObject);
+    procedure imgVoltarClick(Sender: TObject);
   private
     function Validar: Boolean;
     procedure LimparCampos;
@@ -87,6 +88,11 @@ end;
 procedure TFrmCliente.edtTel2Exit(Sender: TObject);
 begin
       Formatar(edtTel2, TFormato.Celular);
+end;
+
+procedure TFrmCliente.imgVoltarClick(Sender: TObject);
+begin
+    close;
 end;
 
 procedure TFrmCliente.LimparCampos;

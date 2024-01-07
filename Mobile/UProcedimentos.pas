@@ -25,6 +25,7 @@ type
     procedure edtValorEnter(Sender: TObject);
     procedure edtValorExit(Sender: TObject);
     procedure spdCadastrarClick(Sender: TObject);
+    procedure imgVoltarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,6 +48,11 @@ end;
 procedure TFrmCadProcedimento.edtValorExit(Sender: TObject);
 begin
     Formatar(edtValor, TFormato.VALOR);
+end;
+
+procedure TFrmCadProcedimento.imgVoltarClick(Sender: TObject);
+begin
+  close;
 end;
 
 procedure TFrmCadProcedimento.spdCadastrarClick(Sender: TObject);

@@ -1,0 +1,90 @@
+unit UPrincipal;
+interface
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.Layouts,
+  FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
+  FMX.ListView, FMX.TabControl;
+type
+  TfrmPrincipal = class(TForm)
+    rectToolbar: TRectangle;
+    lblTitulo: TLabel;
+    rectMenu: TRectangle;
+    lytAba1: TLayout;
+    lblAba1: TLabel;
+    imgAba1: TImage;
+    lytAba2: TLayout;
+    lblAba2: TLabel;
+    imgAba2: TImage;
+    lytAba3: TLayout;
+    lblAba3: TLabel;
+    imgAba3: TImage;
+    lytAba4: TLayout;
+    lblAba4: TLabel;
+    imgAba4: TImage;
+    lvProcedimentos: TListView;
+    Circle1: TCircle;
+    imgIconeFlutuante: TImage;
+    TabControl1: TTabControl;
+    Aba1: TTabItem;
+    Aba2: TTabItem;
+    Rectangle2: TRectangle;
+    Label5: TLabel;
+    Image1: TImage;
+    procedure imgAba1Click(Sender: TObject);
+    procedure lytAba1Click(Sender: TObject);
+    procedure lytAba2Click(Sender: TObject);
+    procedure lytAba3Click(Sender: TObject);
+  private
+    procedure MudarAba(lyt: Tlayout);
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+  frmPrincipal: TfrmPrincipal;
+implementation
+{$R *.fmx}
+{$R *.XLgXhdpiTb.fmx ANDROID}
+{$R *.LgXhdpiTb.fmx ANDROID}
+
+uses UCliente, UProcedimentos;
+{$R *.LgXhdpiTb.fmx ANDROID}
+{$R *.SmXhdpiPh.fmx ANDROID}
+{$R *.XLgXhdpiTb.fmx ANDROID}
+{$R *.LgXhdpiPh.fmx ANDROID}
+procedure TfrmPrincipal.imgAba1Click(Sender: TObject);
+begin
+   if NOT Assigned(FrmCliente) then
+        Application.CreateForm(TFrmCliente, FrmCliente);
+     FrmCliente.Show;
+end;
+procedure TfrmPrincipal.lytAba1Click(Sender: TObject);
+begin
+   if NOT Assigned(FrmCliente) then
+        Application.CreateForm(TFrmCliente, FrmCliente);
+     FrmCliente.Show;
+end;
+
+procedure TfrmPrincipal.lytAba2Click(Sender: TObject);
+begin
+     if NOT Assigned(FrmCadProcedimento) then
+        Application.CreateForm(TFrmCadProcedimento, FrmCadProcedimento);
+     FrmCadProcedimento.Show;
+end;
+
+procedure TfrmPrincipal.MudarAba(lyt: Tlayout);
+begin
+    TabControl1.GotoVisibleTab(lyt.Tag);
+end;
+
+procedure TfrmPrincipal.lytAba3Click(Sender: TObject);
+begin
+      MudarAba(TLayout(Sender));
+end;
+
+
+end.
+
+

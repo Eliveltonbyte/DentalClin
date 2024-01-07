@@ -29,14 +29,18 @@ var
 implementation
 
 {$R *.fmx}
+
+
+
+
 {$R *.LgXhdpiTb.fmx ANDROID}
 
 procedure TFrmLogin.spdBtnClick(Sender: TObject);
 begin
- if NOT Assigned(FrmPrincipal) then
-        Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+ if NOT Assigned(frmPrincipal) then
+        Application.CreateForm(TfrmPrincipal, frmPrincipal);
 
-    FrmPrincipal.Show;
+    frmPrincipal.Show;
 end;
 
 end.

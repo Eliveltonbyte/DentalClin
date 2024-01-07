@@ -1,0 +1,71 @@
+object frmOrcamentos: TfrmOrcamentos
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 507
+  ClientWidth = 364
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rectToolbar: TRectangle
+    Align = Top
+    Fill.Color = xFF86CEE9
+    Size.Width = 364.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblTitulo: TLabel
+      Align = Contents
+      StyledSettings = [Family]
+      Size.Width = 364.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = xFF484848
+      TextSettings.HorzAlign = Center
+      Text = 'OR'#199'AMENTOS'
+      TabOrder = 0
+    end
+  end
+  object tbControl: TTabControl
+    Align = Client
+    Size.Width = 364.000000000000000000
+    Size.Height = 450.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = None
+    Sizes = (
+      364s
+      450s
+      364s
+      450s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcustom'
+      TabOrder = 0
+      Text = 'TabItem2'
+    end
+  end
+end

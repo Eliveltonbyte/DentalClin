@@ -1,0 +1,35 @@
+unit UOrcamentos;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.TabControl, Skia,
+  Skia.FMX;
+
+type
+  TfrmOrcamentos = class(TForm)
+    rectToolbar: TRectangle;
+    lblTitulo: TLabel;
+    tbControl: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    imgVoltar: TImage;
+    rectBtn: TRectangle;
+    RectTop: TRectangle;
+    SkAnimatedImage1: TSkAnimatedImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmOrcamentos: TfrmOrcamentos;
+
+implementation
+
+{$R *.fmx}
+
+end.

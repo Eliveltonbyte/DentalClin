@@ -62,6 +62,7 @@ object FrmCadProcedimento: TFrmCadProcedimento
       Size.Width = 50.000000000000000000
       Size.Height = 27.000000000000000000
       Size.PlatformDefault = False
+      OnClick = imgVoltarClick
     end
   end
   object lytCentral: TLayout

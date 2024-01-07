@@ -62,6 +62,7 @@ object FrmCliente: TFrmCliente
       Size.Width = 50.000000000000000000
       Size.Height = 27.000000000000000000
       Size.PlatformDefault = False
+      OnClick = imgVoltarClick
     end
   end
   object lytGeral: TLayout
@@ -271,8 +272,8 @@ object FrmCliente: TFrmCliente
           Size.PlatformDefault = False
           StyleLookup = 'memostyle'
           TabOrder = 5
-          Viewport.Width = 389.000000000000000000
-          Viewport.Height = 69.000000000000000000
+          Viewport.Width = 385.000000000000000000
+          Viewport.Height = 65.000000000000000000
         end
         object edtCpf: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]

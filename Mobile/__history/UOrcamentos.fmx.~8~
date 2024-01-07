@@ -1,0 +1,164 @@
+object frmOrcamentos: TfrmOrcamentos
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 507
+  ClientWidth = 347
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rectToolbar: TRectangle
+    Align = Top
+    Fill.Color = xFF86CEE9
+    Size.Width = 347.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblTitulo: TLabel
+      Align = Contents
+      StyledSettings = [Family]
+      Size.Width = 347.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = xFF484848
+      TextSettings.HorzAlign = Center
+      Text = 'OR'#199'AMENTOS'
+      TabOrder = 0
+    end
+    object imgVoltar: TImage
+      MultiResBitmap.Height = 64
+      MultiResBitmap.Width = 64
+      MultiResBitmap = <
+        item
+          Width = 64
+          Height = 64
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+            DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            011049444154785EED9B316E02510C0557518A70AD5C2A87A24C1320D7A28621
+            8AA514169F058AD87F461AAD7EF946DAD24B31DEF113373FAFC9B88C3FE209BF
+            71AA087FC787D344C8C687077CC3B65C1B1FEEB165845BC6873B6C1561CDF8F0
+            0B5B44B8677CF881A57964FC165FB12C8EC76CDC48C763591C8FD9B8918EC7B2
+            381EB371231D8F65713C66E3463A1ECBE278CCC68D743C96C5F1988D1BE9782C
+            8BE3311B37D2F15816C763366EE4BF1BFFF2FB95954CFD0B044600238011C008
+            6004300218018C004600238011C0086004300218018C004600238011C0086004
+            30023C12A1FCC144704F84362733C19A08ED8EA6825B22B43D9B0BAE45687F38
+            196411A6BE1F9E6E7C7089F0C4F3F965390364F138B16FE5FEE6000000004945
+            4E44AE426082}
+          FileName = 
+            'C:\DentalClin\Mobile\imagens\botao-de-seta-para-a-esquerda-do-te' +
+            'clado.png'
+        end>
+      Align = Left
+      Margins.Left = 7.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 7.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Image1: TImage
+      MultiResBitmap.Height = 64
+      MultiResBitmap.Width = 64
+      MultiResBitmap = <
+        item
+          Width = 64
+          Height = 64
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+            DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            01AE49444154785EED9ABD4EC34010846D0B5206246869A0819217E009E8024F
+            19D2F104BC00253484821A81522628663637910249E14BA4B5959D4F5ACD9E2D
+            457713FFE8462E84104208218488494975673E9FF7CBB23CB7BEAEEB71555593
+            C509675A31008BBF860C50BDC581A298A24630E1390DFDA8A86EE0DF3E85DCA3
+            968B37ACBF83312769E8471B065C410ED2E80F87B825EC9C2BEE068023EA1A30
+            E798AD1B6D18D0296400352C32801A1619400D8B0CA086450650C312DE80ADF2
+            006E692FA1FD74248B0BD4596AD7F840BDA5B639D8454E309797AAAA3E79A831
+            D90630CCB0FDFCA62D6D9BFCA086B9A14AD62D603116C4929CAE2DDEB0390D38
+            C7C66419C00C6F35C9E91ABD65CED894BD7B08E25950B36D449601F8ED31C402
+            CCAE62737B4F6D33B20C60743D42CD1607BAC50C97FF436EBCBED56BD0D25B0B
+            3043BE067705E6DD426ED2688D272CE291BD0B7BF710CC450650C32203A86191
+            01D4B0C8006A586400352C3280EA06766EDF6C37F14575C3DD00DBB6422CC0FC
+            8F650CAFA9F5C3DD00EED987A8D564698A2BC312DDECFDFCAEB4F29DA061E92D
+            16DDFA879242082184104284A4287E01FC756F50EC31597B0000000049454E44
+            AE426082}
+          FileName = 'C:\DentalClin\Mobile\imagens\add.png'
+        end>
+      Align = Right
+      Margins.Top = 9.000000000000000000
+      Margins.Right = 7.000000000000000000
+      Margins.Bottom = 9.000000000000000000
+      Position.X = 290.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object tbControl: TTabControl
+    Align = Client
+    Size.Width = 347.000000000000000000
+    Size.Height = 450.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = None
+    Sizes = (
+      347s
+      450s
+      347s
+      450s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      object rectBtn: TRectangle
+        Align = Bottom
+        Anchors = [akBottom]
+        Margins.Left = 50.000000000000000000
+        Margins.Right = 50.000000000000000000
+        Position.X = 50.000000000000000000
+        Position.Y = 400.000000000000000000
+        Size.Width = 247.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+      end
+      object RectTop: TRectangle
+        Align = Top
+        Fill.Kind = None
+        Size.Width = 347.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Cap = Round
+        Stroke.Join = Bevel
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcustom'
+      TabOrder = 0
+      Text = 'TabItem2'
+    end
+  end
+end
